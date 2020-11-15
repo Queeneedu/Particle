@@ -11,7 +11,7 @@ class Particle {
     this.position = createVector(x, y);
     this.velocity = createVector(random(-1, 1), random(-1, 0));
     this.acceleration = createVector(0, 0);
-    this.lifespan = 255.0;
+    this.lifespan = 230.0;
   }
 
   run() {
@@ -37,7 +37,7 @@ class Particle {
     stroke(255, this.lifespan);
     strokeWeight(2);
     fill(255, this.lifespan);
-    ellipse(this.position.x, this.position.y, 12, 12);
+    ellipse(this.position.x, this.position.y, 30, 30);
   }
 
   // Is the particle still useful?
