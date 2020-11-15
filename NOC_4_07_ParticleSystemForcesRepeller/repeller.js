@@ -2,7 +2,9 @@ class Repeller {
   constructor(x, y) {
     this.power = 150;
     this.position = createVector(x, y);
+
   }
+
 
   display() {
     stroke(255);
@@ -10,6 +12,7 @@ class Repeller {
     fill(127);
     ellipse(this.position.x, this.position.y, 32, 32);
   }
+
 
   repel(p) {
     let dir = p5.Vector.sub(this.position, p.position); // Calculate direction of force
@@ -20,4 +23,4 @@ class Repeller {
     dir.mult(force); // Get force vector --> magnitude * direction
     return dir;
   }
-};
+}
