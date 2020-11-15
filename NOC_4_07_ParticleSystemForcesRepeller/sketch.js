@@ -14,10 +14,10 @@ function setup() {
 function draw() {
   background(51);
   ps.addParticle(mouseX, mouseY);
-
+  ps.addParticle(pmouseX, pmouseY);
   // Apply gravity force to all Particles
-  let gravity = createVector(0, 0.02);
-  ps.applyForce(gravity);
+  // let gravity = createVector(0, 0.02);
+  // ps.applyForce(gravity);
 
   ps.applyRepeller(repeller);
 
