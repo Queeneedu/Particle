@@ -30,5 +30,4 @@ function draw() {
 }
 function mousePressed() {
   light.push(new Light(createVector(width/2,height/2)));
-  light = light.filter(light => !light.isDead());
 }

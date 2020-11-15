@@ -11,8 +11,6 @@ class Light {
   run() {
     this.update();
     this.display();
-
-
     }
 
     update() {
@@ -31,11 +29,5 @@ class Light {
       ellipse(this.pos.x, this.pos.y, this.light, this.light);
     }
 
-    isDead() {
-      if (this.lifespan < 0.0) {
-        return true;
-      } else {
-        return false;
-      }
-    }
+
 }
